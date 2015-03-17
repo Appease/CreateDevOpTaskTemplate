@@ -1,14 +1,14 @@
 # halt immediately on any errors which occur in this module
 $ErrorActionPreference = 'Stop'
 
-function Invoke-CIStep(
+function Invoke-PoshDevOpsTask(
 
 [String]
 [ValidateNotNullOrEmpty()]
 [Parameter(
     Mandatory=$true,
     ValueFromPipelineByPropertyName=$true)]
-$PoshCIProjectRootDirPath,
+$PoshDevOpsProjectRootDirPath,
 
 [String[]]
 [Parameter(
@@ -38,7 +38,7 @@ $Version='0.0.1'){
     # default to recursively picking up any .nuspec files below the project root directory path
     if(!$IncludeNuspecFilePath){
 
-        $NuspecFilePaths = gci -Path $PoshCIProjectRootDirPath  -File -Recurse -Filter '*.nuspec' | %{$_.FullName}
+        $NuspecFilePaths = gci -Path $PoshDevOpsProjectRootDirPath  -File -Recurse -Filter '*.nuspec' | %{$_.FullName}
     
     }
     else{
@@ -73,4 +73,4 @@ Invoking nuget:
 
 }
 
-Export-ModuleMember -Function Invoke-CIStep
+Export-ModuleMember -Function Invoke-PoshDevOpsTask

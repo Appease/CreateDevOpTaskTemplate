@@ -1,11 +1,11 @@
 ####What is it?
 
-A [PoshCI](https://github.com/PoshCI/PoshCI) step that creates one or more [PoshCI](https://github.com/PoshCI/PoshCI) packages
+A [PoshDevOps](https://github.com/PoshDevOps/PoshDevOps) step that creates one or more [PoshDevOps](https://github.com/PoshDevOps/PoshDevOps) packages
 
 ####How do I install it?
 
 ```PowerShell
-Add-CIStep -Name "YOUR-CISTEP-NAME" -PackageId "CreatePoshCIPackage"
+Add-PoshDevOpsTask -Name "YOUR-CISTEP-NAME" -PackageId "CreatePoshDevOpsPackage"
 ```
 
 ####What parameters are available?
