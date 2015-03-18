@@ -55,5 +55,5 @@ $Version='0.0.1'
 ```
 
 ####What's the build status?
-![](https://ci.appveyor.com/api/projects/status/tgagt9cl2wr3f1os?svg=true)
+![](https://ci.appveyor.com/api/projects/status/374iiaqbwwdf2uyu?svg=true)
 
