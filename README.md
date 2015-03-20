@@ -1,6 +1,6 @@
 ####What is it?
 
-A [PoshDevOps](https://github.com/PoshDevOps/PoshDevOps) step that creates one or more [PoshDevOps](https://github.com/PoshDevOps/PoshDevOps) packages
+A [PoshDevOps](https://github.com/PoshDevOps/PoshDevOps) task that creates one or more [PoshDevOps](https://github.com/PoshDevOps/PoshDevOps) packages
 
 ####How do I install it?
 
