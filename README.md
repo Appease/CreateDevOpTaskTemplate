@@ -1,6 +1,6 @@
 ####What is it?
 
-An [Appease](https://github.com/appease) devop task template that creates one or more [Appease](https://github.com/appease) devop task templates
+An [appease](http://appease.io) task template that creates one or more [appease](http://appease.io) task templates
 
 ####How do I install it?
 
