@@ -5,7 +5,7 @@ An [appease](http://appease.io) task template that creates one or more [appease]
 ####How do I install it?
 
 ```PowerShell
-Add-DevOpTask -Name "YOUR-TASK-NAME" -TemplateId "CreateDevOpTaskTemplate"
+Add-DevOpTask -Name "YOUR-TASK-NAME" -TemplateId "CreateAppeaseTaskTemplate"
 ```
 
 ####What parameters are available?
