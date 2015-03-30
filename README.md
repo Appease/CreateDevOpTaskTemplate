@@ -1,11 +1,11 @@
 ####What is it?
 
-A [PoshDevOps](https://github.com/PoshDevOps/PoshDevOps) task that creates one or more [PoshDevOps](https://github.com/PoshDevOps/PoshDevOps) packages
+A [Appease](https://github.com/Appease/Appease) task that creates one or more [Appease](https://github.com/Appease/Appease) templates
 
 ####How do I install it?
 
 ```PowerShell
-Add-PoshDevOpsTask -Name "YOUR-TASK-NAME" -PackageId "CreatePoshDevOpsPackage"
+Add-DevOpTask -Name "YOUR-TASK-NAME" -TemplateId "CreateDevOpTaskTemplate"
 ```
 
 ####What parameters are available?
