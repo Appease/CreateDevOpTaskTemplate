@@ -25,13 +25,13 @@ schema:
 @(
     [PSCustomObject]@{
     
-        # ';' separated string containing patterns of files & directories to include
+        # a string containing semi-colon separated patterns of files & directories to include
         Include = '**;*.txt;some-dir'; 
         
         # optional relative path to prepend to all included files & directories
         Destination = 'rel\path\';
         
-        # ';' separated string containing patterns of files & directories to exclude
+        # a string containing semi-colon separated patterns of files & directories to exclude
         Exclude = 'some-other-dir;*.config';
     }
 )
