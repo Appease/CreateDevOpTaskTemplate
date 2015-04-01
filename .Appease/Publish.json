@@ -1,0 +1,24 @@
+{
+    "Name":  "Publish",
+    "Tasks":  [
+                  {
+                      "TemplateId":  "PublishAppeaseTaskTemplate",
+                      "Name":  "Publish To Official appease feed",
+                      "TemplateVersion":  "0.0.1",
+                      "Parameters":  {
+                                         "IconUrl":  "http://res.cloudinary.com/hibczhd9m/image/upload/c_crop,w_350/v1423785217/NuGet.org/5711875.png",
+                                         "Id":  "PublishAppeaseTaskTemplate",
+                                         "Version":  "0.0.2",
+                                         "Description":  "Publishes an appease task template",
+                                         "ProjectUrl":  "https://github.com/Appease/PublishAppeaseTaskTemplate",
+                                         "Contributor":  {
+                                                             "Name":  "Chris Dostert"
+                                                         },
+                                         "File":  {
+                                                      "Include":  "Src\\PublishAppeaseTaskTemplate.psm1",
+                                                      "Destination":  "PublishAppeaseTaskTemplate"
+                                                  }
+                                     }
+                  }
+              ]
+}
