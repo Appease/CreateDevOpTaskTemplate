@@ -57,25 +57,23 @@ schema:
 ```
 
 #####Dependency
-description: a `PSCustomObject` representing dependencies of the task template.  
+description: a `PSCustomObject[]` representing dependencies of the task template.  
 
 schema: 
 ```PowerShell
-[PSCustomObject]@{
-
-    # dependency source type (only chocolatey supported for now..)
-    Chocolatey = [PSCustomObject]@(
-    
-        [PSCustomObject]@{
+@(
+    [PSCustomObject]@{
+            
+            # dependency type (only `Chocolatey` supported for now..)
+            Type = Chocolatey
         
             # chocolatey package id
             Id = 'git';
             
             # chocolatey package version
             Version = '1.9.5'
-        }
-    )
-}
+    }   
+)
 ```
 
 #####IconUrl
