@@ -25,13 +25,13 @@ schema:
 @(
     [PSCustomObject]@{
     
-        # a string containing semi-colon separated patterns of files & directories to include
+        # (required) string containing semi-colon separated patterns of files & directories to include
         Include = '**;*.txt;some-dir'; 
         
-        # optional relative path to prepend to all included files & directories
+        # (optional) relative path to prepend to all included files & directories
         Destination = 'rel\path\';
         
-        # a string containing semi-colon separated patterns of files & directories to exclude
+        # (optional) string containing semi-colon separated patterns of files & directories to exclude
         Exclude = 'some-other-dir;*.config';
     }
 )
@@ -50,30 +50,52 @@ schema:
 @(
     [PSCustomObject]@{
         
-        # contributors name
+        # (required) contributors name
         Name = "Chris Dostert"
     }
 )
 ```
 
-#####Dependency
-description: a `PSCustomObject[]` representing dependencies of the task template.  
+#####Dependencies
+description: a `PSCustomObject` representing dependencies of the task template.  
 
 schema: 
 ```PowerShell
-@(
-    [PSCustomObject]@{
-            
-            # dependency type (only `Chocolatey` supported for now..)
-            Type = Chocolatey
+[PSCustomObject]@{
+
+    # dependency type (only 'Chocolatey' supported for now)
+    Chocolatey = @(
         
-            # chocolatey package id
+        # chocolatey install comand parameters
+        # see: https://github.com/chocolatey/choco/wiki/CommandsInstall
+        [PSCustomObject]@{
+        
+            # (required) chocolatey package id
             Id = 'git';
             
-            # chocolatey package version
+            # (optional) 'Source' option
+            Source = 'https://chocolatey.org/api/v2/'
+            
+            # (optional) 'Version' option
             Version = '1.9.5'
-    }   
-)
+            
+            # (optional) 'InstallArguments' option
+            InstallArguments = ''
+            
+            # (optional) 'OverrideArguments'
+            OverrideArguments = $true
+            
+            # (optional) 'PackageParameters'
+            PackageParameters = ''
+            
+            # (optional) 'AllowMultipleVersions'
+            AllowMultipleVersions = $true
+            
+            # (optional) 'IgnoreDependencies'
+            IgnoreDependencies = $true
+        }
+    )
+}
 ```
 
 #####IconUrl
