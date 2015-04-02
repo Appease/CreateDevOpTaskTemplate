@@ -4,7 +4,7 @@
                   {
                       "TemplateId":  "PublishAppeaseTaskTemplate",
                       "Name":  "Publish To Official appease feed",
-                      "TemplateVersion":  "0.0.7",
+                      "TemplateVersion":  "0.0.12",
                       "Parameters":  {
                                          "IconUrl":  "http://res.cloudinary.com/hibczhd9m/image/upload/c_crop,w_350/v1423785217/NuGet.org/5711875.png",
                                          "Id":  "PublishAppeaseTaskTemplate",
