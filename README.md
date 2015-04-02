@@ -6,7 +6,7 @@ An [appease](http://appease.io) task template that publishes an [appease](http:/
 ####How do I install it?
 
 ```PowerShell
-Add-AppeaseTask -Name "YOUR-TASK-NAME" -TemplateId "PublishAppeaseTaskTemplate"
+Add-AppeaseTask -DevOpName YOUR-DEVOP-NAME -Name YOUR-TASK-NAME -TemplateId PublishAppeaseTaskTemplate
 ```
 
 ####What Parameters Are Required?
