@@ -112,7 +112,7 @@ description: a `string` representing a local path or a url to publish the result
 default: the official Appease community feed (https://www.myget.org/F/appease/api/v2/)
 
 #####ApiKey
-description: a string representing the api key to use to authenticate against the .nupkg source being published to.
+description: a `string` representing the api key to use to authenticate against the .nupkg source being published to.
 
 #####ProjectRootDirPath
 description: a `string` representing the path to the root directory of the task template project.
