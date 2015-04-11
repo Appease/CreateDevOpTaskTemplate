@@ -1,7 +1,7 @@
 ![](https://ci.appveyor.com/api/projects/status/t1a41j0f8eviwyx7?svg=true)
 ####What is it?
 
-An [appease](http://appease.io) task template that publishes an [appease](http://appease.io) task template package
+An [appease](http://appease.io) task template that publishes an [appease](http://appease.io) task template to a [NuGet](http://nuget.org) feed
 
 ####How do I install it?
 
